@@ -1,0 +1,28 @@
+GET http://localhost:3005/prihodi
+
+###
+GET http://localhost:3005/rashodi
+
+###
+POST http://localhost:3005/prihodi
+Content-Type: application/json
+
+{
+    "desc":"Neki novi prihod",
+    "value": "548"
+}
+
+###
+POST http://localhost:3005/rashodi
+Content-Type: application/json
+
+{
+    "desc":"Neki novi rashod",
+    "value": 5587
+}
+
+###
+DELETE http://localhost:3005/prihodi/1
+
+### 
+DELETE http://localhost:3005/rashodi/1
